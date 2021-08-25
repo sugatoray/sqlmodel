@@ -1,0 +1,28 @@
+### repo-visualizer: creates a visualization of the entire repo
+# - try-out-online: https://octo-repo-visualization.vercel.app/?repo=tiangolo%2Fsqlmodel
+# - demo-app: https://github.com/githubocto/repo-visualizer-demo
+# - article: https://octo.github.com/projects/repo-visualization
+# - github-action-repo: https://github.com/githubocto/repo-visualizer
+
+name: "Create repo visualization"
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+      - feature/add_repo-visualization
+
+jobs:
+  get_data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+      - name: Update diagram
+        uses: githubocto/repo-visualizer@main
+        with:
+          output_file: "diagram.svg"
+          excluded_paths: "ignore,.github"
+          root_path: "./"
+          max_depth: 9
+          #commit_message: "Repo visualizer: updated diagram [skip ci]"
