@@ -9,7 +9,7 @@ on:
   workflow_dispatch: {}
   push:
     branches:
-      - main
+      #- main
       - feature/add_repo-visualization
 
 jobs:
