@@ -213,3 +213,25 @@ And at the same time, ✨ it is also a **Pydantic** model ✨. You can use inher
 ## License
 
 This project is licensed under the terms of the MIT license.
+
+## Visualize Repository
+
+[Open repo visualizer](https://octo-repo-visualization.vercel.app/?repo=tiangolo%2Fsqlmodel)
+
+**repo-visualizer**: creates a visualization of the entire repo
+
+<!---
+- try-out-online: https://octo-repo-visualization.vercel.app/?repo=tiangolo%2Fsqlmodel
+- demo-app: https://github.com/githubocto/repo-visualizer-demo
+- article: https://octo.github.com/projects/repo-visualization
+- github-action-repo: https://github.com/githubocto/repo-visualizer
+--->
+
+<details>
+<summary><strong>Click to visualize repository diagram</strong></summary>
+<p>
+  
+![Visualization of the codebase](./diagram.svg)
+
+</p>
+</details>
